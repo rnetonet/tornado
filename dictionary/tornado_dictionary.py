@@ -46,6 +46,7 @@ class TornadoDic:
     PH = "PageHinkley"
     CUSUM = "CUSUM"
     NO_DETECTION = "NO_DETECTION"
+    RBFM = "RBFM"
 
     MAJORITY_COUNTING = "MAJORITY COUNTING"
     MC = "MC"
