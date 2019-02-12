@@ -1,0 +1,3 @@
+[submodule "simple-markov"]
+	path = simple-markov
+	url = https://github.com/Mandragorian/simple-markov.git

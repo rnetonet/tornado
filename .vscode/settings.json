@@ -1,3 +1,4 @@
 {
-    "python.pythonPath": "/home/rnetonet/.virtualenvs/tornado/bin/python"
+    "python.pythonPath": "/home/rnetonet/.virtualenvs/tornado-a8sI_Iwa/bin/python",
+    "python.linting.pylintEnabled": true
 }

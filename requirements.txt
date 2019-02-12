@@ -15,6 +15,7 @@ Pympler==0.6
 pyparsing==2.3.0
 python-dateutil==2.7.5
 scipy==1.1.0
+simple-markov==1.0.1
 six==1.12.0
 toml==0.10.0
 typed-ast==1.1.1

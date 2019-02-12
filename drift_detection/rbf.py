@@ -9,12 +9,12 @@ from dictionary.tornado_dictionary import TornadoDic
 from drift_detection.detector import SuperDetector
 
 
-class RBFM(SuperDetector):
+class RBF(SuperDetector):
     """Radial Basis Function with Markov Chain detector."""
 
-    DETECTOR_NAME = TornadoDic.RBFM
+    DETECTOR_NAME = TornadoDic.RBF
 
-    def __init__(self, min_window_size=30, sigma=0.5, threshold=0.8):
+    def __init__(self, min_window_size=1, sigma=0.5, threshold=0.75):
         super().__init__()
 
         self.min_window_size = min_window_size
@@ -78,4 +78,18 @@ class RBFM(SuperDetector):
         self.window = []
 
     def get_settings(self):
-        return []
+        return [
+            str(self.min_window_size)
+            + "."
+            + str(self.sigma)
+            + "."
+            + str(self.threshold),
+            "min_window_size:"
+            + str(self.min_window_size)
+            + ", "
+            + "sigma:"
+            + str(self.sigma).upper()
+            + ", "
+            + "threshold:"
+            + str(self.threshold).upper(),
+        ]
